@@ -5,6 +5,7 @@
 	<version>0.0.6-SNAPSHOT</version>
 	<name>Windows Data Protection API Wrapper</name>
 	<description>A JNI wrapper for the Windows Data Protection API</description>
+	<url>https://github.com/Tasktop/com.tasktop.wdpapi</url>
 
     <profiles>
         <profile>
@@ -35,7 +36,7 @@
             </properties>
         </profile>
     </profiles>
-    
+
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <scm.developerConnection>scm:git://git@github.com:Tasktop/com.tasktop.wdpapi.git</scm.developerConnection>
@@ -116,8 +117,8 @@
 			</plugin>
 		</plugins>
 	</build>
-	
-	
+
+
     <distributionManagement>
         <repository>
             <id>ossrh</id>

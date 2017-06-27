@@ -34,7 +34,27 @@ Building
 
 From the commandline:
 
-`mvn clean package` 
+`mvn clean package`
+
+How To Release
+--------------
+
+Due to the platform-dependent nature of the build, releases must be done from a Windows machine.
+
+Note that build will fail if sources are on a shared folder; if necessary, copy Git repository to a drive such as C:
+
+From GitBash on Windows:
+
+````
+mvn -Possrh -Psign -Darguments=-Dgpg.passphrase=thesecret release:clean release:prepare -DpushChanges=false -DlocalCheckout=false
+mvn -Possrh -Psign -Darguments=-Dgpg.passphrase=thesecret release:perform -DpushChanges=false -DlocalCheckout=false
+````
+
+Then push changes:
+
+````
+git push
+````
 
 License
 =======

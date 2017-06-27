@@ -3,6 +3,19 @@ Windows Data Protection API for Java
 
 This project provides a minimal Java wrapper around the [Windows Data Protection](https://msdn.microsoft.com/en-us/library/ms995355.aspx) API with a permissive license.  
 
+Project Setup
+=============
+
+In your Maven pom, add the following as a dependency:
+
+````
+<dependency>
+    <groupId>com.tasktop</groupId>
+    <artifactId>wdpapi</artifactId>
+    <version>0.0.6</version>
+</dependency>
+````
+
 How to Use
 ==========
 

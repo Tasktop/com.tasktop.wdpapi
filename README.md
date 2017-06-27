@@ -43,11 +43,11 @@ Due to the platform-dependent nature of the build, releases must be done from a 
 
 Note that build will fail if sources are on a shared folder; if necessary, copy Git repository to a drive such as C:
 
-From GitBash on Windows:
+From the Windows command-line:
 
 ````
-mvn -Possrh -Psign -Darguments=-Dgpg.passphrase=thesecret release:clean release:prepare -DpushChanges=false -DlocalCheckout=false
-mvn -Possrh -Psign -Darguments=-Dgpg.passphrase=thesecret release:perform -DpushChanges=false -DlocalCheckout=false
+mvn -Possrh -Psign -DpushChanges=false -DlocalCheckout=true -Darguments=-Dgpg.passphrase=thesecret release:clean release:prepare
+mvn -Possrh -Psign -DpushChanges=false -DlocalCheckout=true -Darguments=-Dgpg.passphrase=thesecret release:perform
 ````
 
 Then push changes:
@@ -55,6 +55,8 @@ Then push changes:
 ````
 git push
 ````
+
+Search for the staging repository, close and relase it: https://oss.sonatype.org/#stagingRepositories
 
 License
 =======

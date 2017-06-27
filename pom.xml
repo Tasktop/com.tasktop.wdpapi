@@ -1,9 +1,8 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.tasktop</groupId>
 	<artifactId>wdpapi</artifactId>
-	<version>0.0.5-SNAPSHOT</version>
+	<version>0.0.5</version>
 	<name>Windows Data Protection API Wrapper</name>
 	<description>A JNI wrapper for the Windows Data Protection API</description>
 
@@ -149,7 +148,7 @@
         <developerConnection>${scm.developerConnection}</developerConnection>
         <connection>scm:git://git@github.com:Tasktop/com.tasktop.wdpapi.git</connection>
         <url>https://github.com/Tasktop/com.tasktop.wdpapi.git</url>
-        <tag>HEAD</tag>
+        <tag>wdpapi-0.0.5</tag>
     </scm>
     <developers>
         <developer>

@@ -1,0 +1,9 @@
+x64
+.vs
+*.dll
+*.exp
+*.lib
+*.obj
+*.vcxproj.user
+*.vcxproj.filters
+target

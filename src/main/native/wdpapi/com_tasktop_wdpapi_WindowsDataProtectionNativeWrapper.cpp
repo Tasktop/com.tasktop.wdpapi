@@ -101,7 +101,9 @@ JNIEXPORT jbyteArray JNICALL Java_com_tasktop_wdpapi_WindowsDataProtectionNative
     throwWindowsDataProtectionException(env);
     return NULL;
   }
-  return createBytesFromDataBlob(env,result);
+  jbyteArray bytes = createBytesFromDataBlob(env,result);
+  LocalFree(result.pbData);
+  return bytes;
 }
 
 /*
@@ -125,5 +127,7 @@ JNIEXPORT jbyteArray JNICALL Java_com_tasktop_wdpapi_WindowsDataProtectionNative
     throwWindowsDataProtectionException(env);
     return NULL;
   }
-  return createBytesFromDataBlob(env,result);
+  jbyteArray bytes = createBytesFromDataBlob(env,result);
+  LocalFree(result.pbData);
+  return bytes;
 }

@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.tasktop</groupId>
 	<artifactId>wdpapi</artifactId>
-	<version>0.0.7-SNAPSHOT</version>
+	<version>0.0.7</version>
 	<name>Windows Data Protection API Wrapper</name>
 	<description>A JNI wrapper for the Windows Data Protection API</description>
 	<url>https://github.com/Tasktop/com.tasktop.wdpapi</url>
@@ -149,7 +149,7 @@
         <developerConnection>${scm.developerConnection}</developerConnection>
         <connection>scm:git://git@github.com:Tasktop/com.tasktop.wdpapi.git</connection>
         <url>https://github.com/Tasktop/com.tasktop.wdpapi.git</url>
-        <tag>HEAD</tag>
+        <tag>wdpapi-0.0.7</tag>
     </scm>
     <developers>
         <developer>

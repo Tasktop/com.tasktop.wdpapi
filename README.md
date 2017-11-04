@@ -12,7 +12,7 @@ In your Maven pom, add the following as a dependency:
 <dependency>
     <groupId>com.tasktop</groupId>
     <artifactId>wdpapi</artifactId>
-    <version>0.0.6</version>
+    <version>0.0.7</version>
 </dependency>
 ````
 
